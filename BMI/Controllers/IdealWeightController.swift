@@ -30,6 +30,7 @@ class IdealWeight: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
         self.taille.dataSource = self
         tailleData = Array(100...210).map{String($0)}
         buttonStyle()
+        taille.selectRow(60, inComponent:0, animated: true)
     
         
         

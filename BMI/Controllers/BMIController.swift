@@ -37,7 +37,7 @@ class BMIController: UIViewController,  UITableViewDelegate, UITableViewDataSour
         SliderHeight.value = (SliderHeight.maximumValue + SliderHeight.minimumValue) / 2
         WeightLabel.text = String((SliderWeight.maximumValue + SliderWeight.minimumValue) / 2)
         SliderWeight.value = (SliderWeight.maximumValue + SliderWeight.minimumValue) / 2
-        
+        BMILabel.text = "00.00"
         
         
         self.BMIStatTable.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
@@ -52,7 +52,6 @@ class BMIController: UIViewController,  UITableViewDelegate, UITableViewDataSour
         let height = Float(HeightLabel.text!)
         let weight = Float(WeightLabel.text!)
         let bmi = weight!/((pow((height!/100), 2)))
-        print(pow(height!, 2))
         BMILabel.text = String(bmi)
         
         //Select Row
