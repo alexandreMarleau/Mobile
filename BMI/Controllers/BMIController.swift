@@ -15,7 +15,7 @@ class BMIController: UIViewController,  UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var WeightLabel: UILabel!
     @IBOutlet weak var SliderWeight: UISlider!
     @IBOutlet weak var BMIStatTable: UITableView!
-    //note
+    //note1
     
     // Data model: These strings will be the data for the table view cells
     let classWeight: [String] = ["Severely underweight", "underweight", "Normal", "Overweight", "Obese Class I", "Obese Class II", "Obese Class III"]
